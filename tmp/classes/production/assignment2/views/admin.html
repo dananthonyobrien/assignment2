@@ -1,0 +1,64 @@
+<!--- This page is not accessable through interface,
+    accessed instead through url \admin. It lists members and assessments--->
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"admin"/}
+
+<section class="ui segment">
+    <h2 class="ui header">
+        All Known Members in the Database:
+    </h2>
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Second Name</th>
+            <th> Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:members, as:'member'}
+        <tr>
+            <td>
+            ${member.firstname}
+            </td>
+            <td>
+            ${member.lastname}
+            </td>
+            <td>
+            ${member.email}
+            </td>
+        </tr>
+        #{/list}
+        </tbody>
+    </table>
+</section>
+
+<section class="ui segment">
+    <h2 class="ui header">
+        All Known Assessments in the Database:
+    </h2>
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th> Assessment ID</th>
+            <th> Weight</th>
+            <th> Member</th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:assessments, as:'assessment'}
+        <tr>
+            <td>
+            ${assessment.id}
+            </td>
+            <td>
+            ${assessment.weight_input}
+            </td>
+        ${assessment.member}
+        </tr>
+        #{/list}
+        </tbody>
+    </table>
+</section>

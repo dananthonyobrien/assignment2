@@ -1,0 +1,57 @@
+<!--- This view allows a trainer to see all of the members, and their assessments
+and to add comments. A trainer can also click on a member's name to access the member's
+dashboard --->
+
+#{extends 'main.html' /}
+#{set title:'Trainer Dashboard' /}
+
+#{menu id:"trainerdashboard"/}
+
+
+<section class="ui raised segment">
+    <h2 class="ui header">
+        Members
+    </h2>
+#{list items:members, as:'member'}
+    <h1 class="ui header">
+        <a href="/members/${member.id}"> ${member.firstname} ${member.lastname}</a>
+    </h1>
+    <a href="/trainerdashboard/deletemember/${member.id}" class="ui icon button">
+        <i class="icon trash"></i></a></td>
+    <table class="ui unstackable table">
+        <thead>
+        <tr>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Date/Time</th>
+            <th>Comment</th>
+        </tr>
+        </thead>
+        <tbody>
+        <td>${member.assessments.weight_input}</td>
+        <td>${member.assessments.chest_input}</td>
+        <td>${member.assessments.thigh_input} </td>
+        <td>${member.assessments.upperArm_input} </td>
+        <td>${member.assessments.waist_input} </td>
+        <td>${member.assessments.hips_input} </td>
+        <td>${member.assessments.ts}</td>
+        <td>${member.assessments.comment}</td>
+        </tr>
+
+        </tbody>
+    </table>
+    <form class="ui stacked segment form" action="/members/{id}/assessment/{assessmentid}" method="POST">
+        <div class="field">
+            <label>Comment</label>
+            <input placeholder="eg. Very Good!" type="text" name="comment">
+        </div>
+        <button class="ui green submit button">Submit</button>
+    </form>
+#{/list}
+</section>
+
+

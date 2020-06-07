@@ -1,0 +1,14 @@
+<!---  This page lists previous assessments and allows users add new ones  --->
+
+#{extends 'main.html' /}
+#{set title:'Assessment' /}
+
+#{menu id:"dashboard"/}
+
+<section class="ui segment">
+    <h2 class="ui header">
+    ${assessment.title}
+    </h2>
+#{listassessments assessment:assessment /}
+#{addassessment assessment:assessment /}
+</section>

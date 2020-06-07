@@ -1,0 +1,108 @@
+<!--- This page displays a member's details, including name, BMI, BMI Category,
+ and Assessments. It also allows member's enter new assessments --->
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"dashboard"/}
+
+
+<section class="ui segment">
+    <header class="ui header">
+    </header>
+    <table class="ui unstackable table">
+        <thead>
+        <tr>
+            <th>
+                <div class="ui icon header">
+                    <i class="user alternate icon blue"></i>
+                ${member.firstname} ${member.lastname}
+                </div>
+            </th>
+            <th>
+                <div class="ui icon header">
+                    <i class="heartbeat icon red"></i>
+                ${member.startingBMI}
+                    Starting BMI
+                </div>
+            </th>
+            <th>
+                <div class="ui icon header">
+                    <i class="heartbeat icon green"></i>
+                ${bmiValue}
+                    Current BMI
+                </div>
+            </th>
+            <th>
+                <div class="ui icon header">
+                    <i class="compass icon yellow"></i>
+                    Ideal Weight Indicator
+                </div>
+            </th>
+
+            <!---
+             <th>
+               <div class="ui icon header">
+                    <i class="user md icon grey"></i>
+                    Starting BMI Category:
+                    ${member.BMICategory}
+                </div>
+            </th>
+            --->
+            <th>
+                <div class="ui icon header">
+                    <i class="user md icon grey"></i>
+                    BMI Category:
+                ${determineBMICategory}
+
+                </div>
+            </th>
+        </tr>
+        </thead>
+    </table>
+</section>
+
+
+<section class="ui raised segment">
+#{addassessment /}
+</section>
+
+<section class="ui raised segment">
+#{listassessment /}
+</section>
+
+
+<section class="ui raised segment">
+#{list items:assessments, as:'assessment'}
+<table class="ui unstackable table">
+    <thead>
+    <tr>
+        <th>Weight</th>
+        <th>Chest</th>
+        <th>Thigh</th>
+        <th>Upper Arm</th>
+        <th>Waist</th>
+        <th>Hips</th>
+        <th>Date</th>
+        <th>Comment</th>
+    </tr>
+    </thead>
+<tbody>
+<tr>
+    <td>${assessment.weight_input}</td>
+    <td>${assessment.chest_input}</td>
+    <td>${assessment.thigh_input} </td>
+    <td>${assessment.upperArm_input} </td>
+    <td>${assessment.waist_input} </td>
+    <td>${assessment.hips_input} </td>
+    <td>${assessment.date_input}</td>
+    <td>${assessment.comment}</td>
+    <td><a href="/dashboard/deleteassessment/${assessment.id}" class="ui icon button">
+        <i class="icon trash"></i></a></td>
+#{/list}
+</tr>
+</tbody>
+</table>
+</section>
+
+
+

@@ -1,0 +1,6 @@
+07 Jun 2020 19:36:36,528 INFO  ~ Starting /Users/danobrien/Desktop/hdip/web-development/assignment2/.
+07 Jun 2020 19:36:36,754 WARN  ~ You're running Play! in DEV mode
+07 Jun 2020 19:36:39,049 INFO  ~ HikariPool-1 - Starting...
+07 Jun 2020 19:36:39,080 INFO  ~ HikariPool-1 - Start completed.
+07 Jun 2020 19:36:39,102 INFO  ~ Connected to jdbc:h2:mem:play for default
+07 Jun 2020 19:36:40,774 INFO  ~ Application 'assignment2' is now started !

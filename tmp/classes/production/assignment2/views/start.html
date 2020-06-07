@@ -1,0 +1,27 @@
+<!--- This page is the first one users see. It tells them about the app,
+     then directs them to signup or login options at top of page --->
+#{extends 'main.html' /}
+#{set title:'Start' /}
+
+#{welcomemenu id:"start"/}
+
+<section class="ui center aligned middle aligned segment">
+    <h1 class="ui header blue">
+        Welcome to Jimmy's Gym
+    </h1>
+    <img class="ui center aligned middle aligned image" src="/public/images/shed.jpg">
+    <h2 class ="ui header">
+        <em>Jimmy's Gym is the gym of the future</em>
+    </h2>
+    <p>
+        Why go to the gym when the gym can come to you? Jimmy's Gym takes all the stress out of going to the gym. Our online tutorials advise you on turning your shed,
+        garage, or spare room into <em> your very own gym</em>, simply using items you find around the house. When your space is set up, simple log into our app
+        and record your progress.
+    </p>
+    <p>
+        <em>It's time to shed those pounds with Jimmy's Gym! </em>
+    </p>
+    <h3 class = "ui header red">
+        Signup or Login today!
+    </h3>
+</section>

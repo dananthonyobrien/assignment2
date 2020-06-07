@@ -1,0 +1,186 @@
+Assessment(a1):
+  weight_input: 90
+  chest_input: 80
+  thigh_input: 50
+  upperArm_input: 30
+  waist_input: 70
+  hips_input: 80
+  date_input: 05/07/2020
+Assessment(a2):
+  weight_input: 110
+  chest_input: 90
+  thigh_input: 60
+  upperArm_input: 35
+  waist_input: 75
+  hips_input: 80
+  date_input: 06/05/2020
+Assessment(a3):
+  weight_input: 80
+  chest_input: 70
+  thigh_input: 40
+  upperArm_input: 20
+  waist_input: 60
+  hips_input: 60
+  date_input: 07/06/2020
+Assessment(a4):
+  weight_input: 60
+  chest_input: 80
+  thigh_input: 50
+  upperArm_input: 30
+  waist_input: 70
+  hips_input: 80
+  date_input: 08/06/2020
+Assessment(a5):
+  weight_input: 65
+  chest_input: 90
+  thigh_input: 60
+  upperArm_input: 35
+  waist_input: 75
+  hips_input: 80
+  date_input: 09/06/2020
+Assessment(a6):
+  weight_input: 58
+  chest_input: 70
+  thigh_input: 40
+  upperArm_input: 20
+  waist_input: 60
+  hips_input: 60
+  date_input: 10/06/2020
+Assessment(a7):
+  weight_input: 90
+  chest_input: 80
+  thigh_input: 50
+  upperArm_input: 30
+  waist_input: 70
+  hips_input: 80
+  date_input: 15/07/2020
+Assessment(a8):
+  weight_input: 110
+  chest_input: 90
+  thigh_input: 60
+  upperArm_input: 35
+  waist_input: 75
+  hips_input: 80
+  date_input: 25/05/2020
+Assessment(a9):
+  weight_input: 80
+  chest_input: 70
+  thigh_input: 40
+  upperArm_input: 20
+  waist_input: 60
+  hips_input: 60
+  date_input: 30/06/2020
+Assessment(a10):
+  weight_input: 60
+  chest_input: 80
+  thigh_input: 50
+  upperArm_input: 30
+  waist_input: 70
+  hips_input: 80
+  date_input: 02/10/2020
+Assessment(a11):
+  weight_input: 65
+  chest_input: 90
+  thigh_input: 60
+  upperArm_input: 35
+  waist_input: 75
+  hips_input: 80
+  date_input: 03/02/2020
+Assessment(a12):
+  weight_input: 58
+  chest_input: 70
+  thigh_input: 40
+  upperArm_input: 20
+  waist_input: 60
+  hips_input: 60
+  date_input: 04/05/2020
+Assessment(a13):
+  weight_input: 90
+  chest_input: 80
+  thigh_input: 50
+  upperArm_input: 30
+  waist_input: 70
+  hips_input: 80
+  date_input: 05/03/2020
+
+
+
+
+
+Member(m1):
+  firstname: Daniel
+  lastname: Shinnick
+  email: ds@gmail.com
+  password: 12345
+  address: 12 Main Street, Bandon, Cork
+  gender: TRUE
+  height: 2
+  startingweight: 100
+  assessments:
+  - a1
+  - a2
+  - a3
+
+
+Member(m2):
+  firstname: Lisa
+  lastname: Shinnick
+  email: ls@gmail.com
+  password: 12345
+  address: 12 Main Street, Bandon, Cork
+  gender: False
+  height: 2
+  startingweight: 100
+  assessments:
+  - a4
+  - a5
+  - a6
+
+Member(m3):
+  firstname: John
+  lastname: Shinnick
+  email: js@gmail.com
+  password: 12345
+  address: 12 Main Street, Bandon, Cork
+  gender: TRUE
+  height: 2
+  startingweight: 100
+  assessments:
+  - a7
+  - a8
+  - a9
+
+
+Member(m4):
+  firstname: Andrew
+  lastname: Shinnick
+  email: as@gmail.com
+  password: 12345
+  address: 12 Main Street, Bandon, Cork
+  gender: TRUE
+  height: 2
+  startingweight: 100
+  assessments:
+  - a10
+  - a11
+  - a12
+
+
+Member(m5):
+  firstname: Elizabeth
+  lastname: Shinnick
+  email: es@gmail.com
+  password: 12345
+  address: 12 Main Street, Bandon, Cork
+  gender: FALSE
+  height: 2
+  startingweight: 100
+  assessments:
+  - a13
+
+
+Trainer(t1):
+  firstname: Cian
+  lastname: Hefty
+  email: ch@gmail.com
+  password: 12345
