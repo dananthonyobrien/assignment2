@@ -31,6 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,6 +49,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -104,7 +106,7 @@
       <workItem from="1591439095832" duration="11546000" />
       <workItem from="1591457166321" duration="4641000" />
       <workItem from="1591553369331" duration="1000" />
-      <workItem from="1591553387110" duration="2791000" />
+      <workItem from="1591553387110" duration="3785000" />
     </task>
     <servers />
   </component>
@@ -164,6 +166,10 @@
     </state>
     <state width="775" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1591554995019" />
     <state width="775" height="214" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1591560828870" />
+    <state x="258" y="226" key="chooseDestDirectoryDialog" timestamp="1591562408616">
+      <screen x="0" y="23" width="1440" height="833" />
+    </state>
+    <state x="258" y="226" key="chooseDestDirectoryDialog/0.23.1440.833@0.23.1440.833" timestamp="1591562408616" />
     <state x="778" y="264" key="com.intellij.ide.util.TipDialog" timestamp="1591457165802">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
@@ -172,12 +178,12 @@
     <state x="778" y="264" key="com.intellij.ide.util.TipDialog/0.23.1440.831@0.23.1440.831" timestamp="1591439060539" />
     <state x="778" y="264" key="com.intellij.ide.util.TipDialog/0.23.1440.832@0.23.1440.832" timestamp="1591457165802" />
     <state x="778" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.833@0.23.1440.833" timestamp="1590527496415" />
-    <state x="796" y="198" key="run.anything.popup" timestamp="1591457208095">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="796" y="199" key="run.anything.popup" timestamp="1591562396575">
+      <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="796" y="198" key="run.anything.popup/0.23.1440.830@0.23.1440.830" timestamp="1590936209289" />
     <state x="796" y="198" key="run.anything.popup/0.23.1440.832@0.23.1440.832" timestamp="1591457208095" />
-    <state x="796" y="199" key="run.anything.popup/0.23.1440.833@0.23.1440.833" timestamp="1590860190522" />
+    <state x="796" y="199" key="run.anything.popup/0.23.1440.833@0.23.1440.833" timestamp="1591562396575" />
     <state x="671" y="180" width="670" height="676" key="search.everywhere.popup" timestamp="1591560991629">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
